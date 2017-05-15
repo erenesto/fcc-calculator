@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	background-color: #102432;
+	font-family: 'Inknut Antiqua';
+	font-size: 18px;
+}
+
+
+.calc {
+	width: 400px;
+	height: auto;
+	background-color: #C7D3E6;
+	box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.buttons, .top-bar {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+}
+
+.top-bar .clear {
+	background-color: #2D3440;
+	color: #C7D3E6;
+	
+}
+
+
+.top-bar .input {
+	background-color: #EEF8FF;
+	width: 250px;
+	border-radius: 5px;
+	margin: 10px;
+	text-align: right;
+	padding-right: 10px;
+
+}
+
+.top-bar .input,
+.top-bar .clear {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+
+.buttons span {
+	background: #F0F3F3;
+}
+
+.buttons span, .top-bar .clear {
+	position: relative;
+	text-align: center;
+	margin: 10px;
+	width: 65px;
+	cursor: pointer;
+}
+
+.buttons span.opt {
+	background-color: #D7DEE4;
+}
+
+.buttons .eval {
+	background-color: #A9BBC8;
+}
+
+.top-bar .input:before{
+    content:attr(data-text);
+    font-weight: 700;
+    color: #C7D3E6;
+}
+
